@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cash Flows</title>
+</head>
+<body>
+    <h2>Cash Flows</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="cashFlow : ${cashFlows}">
+                <td th:text="${cashFlow.cdate}"></td>
+                <td th:text="${cashFlow.amount}"></td>
+                <td th:text="${cashFlow.description}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
