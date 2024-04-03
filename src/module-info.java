@@ -1,0 +1,2 @@
+module SingleToneJavaClass {
+}
